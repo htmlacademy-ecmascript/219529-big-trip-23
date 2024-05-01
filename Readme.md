@@ -1,7 +1,7 @@
 # Проект «Большое путешествие»
 
 * Студент: [Maria Hrol](https://up.htmlacademy.ru/ecmascript/23/user/219529).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Лепёшкин](https://htmlacademy.ru/profile/spearance).
 
 ---
 
