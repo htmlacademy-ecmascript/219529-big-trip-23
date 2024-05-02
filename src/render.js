@@ -1,9 +1,4 @@
-const RenderPosition = {
-  BEFOREBEGIN: 'beforebegin',
-  AFTERBEGIN: 'afterbegin',
-  BEFOREEND: 'beforeend',
-  AFTEREND: 'afterend',
-};
+import {RenderPosition} from './const.js';
 
 function createElement(template) {
   const newElement = document.createElement('div');
@@ -12,8 +7,8 @@ function createElement(template) {
   return newElement.firstElementChild;
 }
 
-function render(component, container, place = RenderPosition.BEFOREEND) {
+function render(component, container, place = RenderPosition.AFTERBEGIN) {
   container.insertAdjacentElement(place, component.getElement());
 }
 
-export {RenderPosition, createElement, render};
+export {createElement, render};
