@@ -1,4 +1,4 @@
-import {createElement} from '../render';
+import {createElement} from '../render.js';
 
 const createNewMainViewTemplate = () => `
       <main class="page-body__page-main  page-main">

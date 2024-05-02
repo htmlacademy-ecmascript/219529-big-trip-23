@@ -1,9 +1,10 @@
 import {render} from './render.js';
 import NewHeaderView from './view/new-header-view.js';
-// import {re} from '@babel/core/lib/vendor/import-meta-resolve';
 import NewMainView from './view/new-main-view.js';
-
-// const pageMainElement = document.querySelector('.page-main');
+import NewTripSortView from './view/new-trip-sort-view.js';
 
 render(new NewHeaderView(), document.body);
 render(new NewMainView(), document.body);
+
+const tripEventsContainerElement = document.querySelector('.trip-events');
+render(new NewTripSortView(), tripEventsContainerElement);
