@@ -1,6 +1,6 @@
 import {createElement} from '../render.js';
 
-const createNewMainViewTemplate = () => `
+const createMainViewTemplate = () => `
       <main class="page-body__page-main  page-main">
       <div class="page-body__container">
           <section class="trip-events">
@@ -10,9 +10,9 @@ const createNewMainViewTemplate = () => `
     </main>
 `;
 
-export default class NewMainView {
+export default class MainView {
   getTemplate() {
-    return createNewMainViewTemplate();
+    return createMainViewTemplate();
   }
 
   getElement() {

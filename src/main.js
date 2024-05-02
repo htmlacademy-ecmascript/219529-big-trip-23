@@ -1,13 +1,13 @@
 import {render} from './render.js';
-import NewHeaderView from './view/new-header-view.js';
-import NewMainView from './view/new-main-view.js';
-import NewTripSortView from './view/new-trip-sort-view.js';
-import EventsListView from './view/events-list-view.js';
+import HeaderView from './view/header-view.js';
+import MainView from './view/main-view.js';
+import TripSortView from './view/trip-sort-view.js';
+import TripEventsListView from './view/trip-events-list-view.js';
 
-render(new NewHeaderView(), document.body);
-render(new NewMainView(), document.body);
+render(new HeaderView(), document.body);
+render(new MainView(), document.body);
 
 const tripEventsContainerElement = document.querySelector('.trip-events');
-render(new NewTripSortView(), tripEventsContainerElement);
-render(new EventsListView(), tripEventsContainerElement);
+render(new TripSortView(), tripEventsContainerElement);
+render(new TripEventsListView(), tripEventsContainerElement);
 

@@ -4,7 +4,7 @@ const createTripEventsListTemplate = () => `
 <ul class="trip-events__list"></ul>
 `;
 
-export default class EventsListView {
+export default class TripEventsListView {
   getTemplate() {
     return createTripEventsListTemplate();
   }
